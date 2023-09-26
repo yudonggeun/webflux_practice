@@ -1,0 +1,10 @@
+spring:
+
+webclient:
+  h2-console-port: 8081
+
+logging:
+  level:
+    org:
+      springframework:
+        r2dbc: DEBUG

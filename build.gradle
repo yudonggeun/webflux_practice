@@ -26,6 +26,13 @@ dependencies {
 	testAnnotationProcessor "org.projectlombok:lombok"
 	testCompileOnly 'org.projectlombok:lombok'
 //	testImplementation 'io.projectreactor:reactor-test'
+	implementation 'org.mapstruct:mapstruct:1.5.1.Final'
+	annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.1.Final'
+
+//	h2
+	implementation 'io.r2dbc:r2dbc-h2'
+//	r2dbc
+	implementation 'org.springframework.data:spring-data-r2dbc'
 }
 
 tasks.named('test') {

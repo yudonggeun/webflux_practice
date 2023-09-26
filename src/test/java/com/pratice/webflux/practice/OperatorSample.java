@@ -750,4 +750,12 @@ public class OperatorSample {
         flux.subscribe(data -> log.info("#          sub2 {}", data));
         Thread.sleep(250L);
     }
+
+    @Test
+    public void concatMap() {
+
+        Flux.range(1, 100)
+                .concatMap(num -> Flux.just("hi", num))
+                .subscribe(data -> log.info("data {}", data));
+    }
 }
